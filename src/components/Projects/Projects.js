@@ -1,7 +1,9 @@
 import React from "react";
 
 import { projects } from "constants/constants";
+
 import { Section, SectionDivider, SectionTitle } from "styles/GlobalComponents";
+
 import {
   Hr,
   Tag,
@@ -21,7 +23,34 @@ function Projects() {
     <Section nopadding id="projects">
       Projects
       <SectionTitle main>Projects</SectionTitle>
-      <GridContainer></GridContainer>
+      <GridContainer>
+        {projects.map(
+          ({ id, image, title, description, source, tags, visit }, index) => (
+            <BlogCard key={id}>
+              <Img src={image} />
+              <TitleContent>
+                <HeaderThree title>{title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+
+              <div>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, index) => (
+                    <Tag key={index}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
+
+              <UtilityList>
+                <ExternalLinks href={visit}>Code</ExternalLinks>
+                <ExternalLinks href={source}>Source</ExternalLinks>
+              </UtilityList>
+            </BlogCard>
+          )
+        )}
+      </GridContainer>
     </Section>
   );
 }
