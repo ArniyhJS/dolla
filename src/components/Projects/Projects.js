@@ -21,7 +21,6 @@ import {
 function Projects() {
   return (
     <Section nopadding id="projects">
-      Projects
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map(

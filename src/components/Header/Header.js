@@ -1,13 +1,17 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 
 import {
   Container,
   Div1,
   Div2,
-  Div3,
+  SocialIconsContainer,
   NavLink,
   SocialIcons,
   Span,
@@ -51,7 +55,7 @@ const Header = () => (
       </li>
     </Div2>
 
-    <Div3>
+    <SocialIconsContainer>
       <SocialIcons href="https://github.com/arniyhjs">
         <AiFillGithub size="3rem" />
       </SocialIcons>
@@ -61,9 +65,9 @@ const Header = () => (
       </SocialIcons>
 
       <SocialIcons href="https://twitter.com/arniyhjs">
-        <AiFillInstagram size="3rem" />
+        <AiFillTwitterCircle size="3rem" />
       </SocialIcons>
-    </Div3>
+    </SocialIconsContainer>
   </Container>
 );
 

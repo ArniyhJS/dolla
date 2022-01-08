@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Section, SectionText, SectionTitle } from "styles/GlobalComponents";
+import { SectionText, SectionTitle } from "styles/GlobalComponents";
 import Button from "styles/GlobalComponents/Button";
-import { LeftSection } from "./Hero.styled";
+import { LeftSection, HeroSection } from "./Hero.styled";
 
 const Hero = (props) => (
-  <Section row nopadding>
+  <HeroSection row nopadding>
     <LeftSection>
       <SectionTitle main center>
         Aniebiet Ebebe <b /> personal portfolio
@@ -18,7 +18,7 @@ const Hero = (props) => (
         What to know me?
       </Button>
     </LeftSection>
-  </Section>
+  </HeroSection>
 );
 
 export default Hero;

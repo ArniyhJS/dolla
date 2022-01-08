@@ -1,5 +1,5 @@
-import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 export const Container = styled.div`
   display: grid;
@@ -42,7 +42,7 @@ export const Div2 = styled.div`
   }
 `;
 
-export const Div3 = styled.div`
+export const SocialIconsContainer = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;

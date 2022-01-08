@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Section } from "styles/GlobalComponents";
+
+export const HeroSection = styled(Section)`
+  /* height: calc(100% + 40vh); */
+`;
 
 export const LeftSection = styled.div`
   width: 100%;
