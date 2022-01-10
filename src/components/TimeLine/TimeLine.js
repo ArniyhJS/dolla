@@ -66,6 +66,7 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider divider />
       <SectionTitle>About me</SectionTitle>
       <SectionText>
         How did you start learning and what are your biggest JavaScript

@@ -6,6 +6,7 @@ import { Box, Boxes, BoxNum, BoxText } from "./Acomplishments.styled";
 
 const Acomplishments = () => (
   <Section>
+    <SectionDivider divider />
     <SectionTitle>Personal Accomplishment</SectionTitle>
     <Boxes>
       {accomplishmentData.map((card, index) => (

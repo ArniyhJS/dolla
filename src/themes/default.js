@@ -1,8 +1,14 @@
 export default {
   // Temp fonts
+  // fonts: {
+  //   title: "Space Grotesk, sans-serif",
+  //   main: "Space Grotesk, sans-serif",
+  // },
+
+  //Updated Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif",
+    title: "Nunito, sans-serif",
+    main: "Nunito, sans-serif",
   },
 
   // Colors for layout
@@ -11,7 +17,8 @@ export default {
     // background1: "#0F1624",
     background1: "#07080f",
     accent1: "hsl(34.9,98.6%,72.9%)",
-    button: "hsl(205.1,100%,36.1%)",
+    // button: "hsl(205.1,100%,36.1%)",
+    button: "#e66e1c",
     background2: "hsl(232.7,27.3%,23.7%)",
   },
 

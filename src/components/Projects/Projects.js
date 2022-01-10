@@ -16,12 +16,14 @@ import {
   HeaderThree,
   TitleContent,
   UtilityList,
+  StackContainer,
 } from "./Projects.styled";
 
 function Projects() {
   return (
     <Section nopadding id="projects">
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionDivider divider />
+      <SectionTitle>Projects</SectionTitle>
       <GridContainer>
         {projects.map(
           ({ id, image, title, description, source, tags, visit }, index) => (
@@ -33,14 +35,14 @@ function Projects() {
               </TitleContent>
               <CardInfo>{description}</CardInfo>
 
-              <div>
+              <StackContainer>
                 <TitleContent>Stack</TitleContent>
                 <TagList>
                   {tags.map((tag, index) => (
                     <Tag key={index}>{tag}</Tag>
                   ))}
                 </TagList>
-              </div>
+              </StackContainer>
 
               <UtilityList>
                 <ExternalLinks href={visit}>Code</ExternalLinks>

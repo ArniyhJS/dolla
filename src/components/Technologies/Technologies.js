@@ -18,7 +18,7 @@ import {
 function Technologies() {
   return (
     <Section id="tech">
-      <SectionDivider />
+      <SectionDivider divider />
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
         I have been working with JavaScript and it ecosystem for the past two
