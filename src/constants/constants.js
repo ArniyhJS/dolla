@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Viddey",
     description: `Viddey is a user-generated video campaigns web app powered the customers. It's a fun brand video sharing platform that enable people share and interact with others on the plaform`,
-    image: "/images/viddey.png",
+    image: "/images/viddey.jpg",
     tags: ["React", "Material-UI", "Redux"],
     source: "https://viddey.video",
     visit: "https://viddey.video",
@@ -12,7 +12,7 @@ export const projects = [
     title: "OFFICESILO",
     description:
       "OFFICESILO Provides The Simplicity Your Organization Needs. OFFICESILO transforms the entire value chain that drives your organization with focus: from people, to processes, to documents, to assets and to finance.",
-    image: "/images/office-silo.png",
+    image: "/images/office-silo.jpg",
     tags: ["React", "Bootstrap", "React-Query"],
     source: "https://officesilo.cloud",
     visit: "https://officesilo.cloud",
@@ -22,7 +22,7 @@ export const projects = [
     title: "Dolla",
     description:
       "Dolla is a landing page which depicts a non-existing virtual financial bank application. Dolla was created solely for practice purpose and has no functioning application ",
-    image: "/images/dolla.png",
+    image: "/images/dolla.jpg",
     tags: ["React", "CSS-in-JS", "JavaScript"],
     source: "http://arniyhjs-dolla.herokuapp.com/",
     visit: "http://arniyhjs-dolla.herokuapp.com/",
@@ -32,7 +32,7 @@ export const projects = [
     title: "Stable Shield",
     description:
       "Company website for Stable Shield Solution Limited. Stable Shield is a company that builds bespoke solutions for their customers and clients",
-    image: "/images/sss.png",
+    image: "/images/sss.jpg",
     tags: ["HTML", "CSS", "JQuery"],
     source: "https://www.stableshield.com",
     visit: "https://www.stableshield.com",
@@ -43,7 +43,7 @@ export const projects = [
     description:
       "Generative Pre-trained Transformer 3 is an autoregressive language model that uses deep learning to produce human-like text. GPT3 was created solely for practice purpose and has no functioning application",
 
-    image: "/images/gpt3.png",
+    image: "/images/gpt3.jpg",
     tags: ["React", "JavaScript", "CSS"],
     source: "https://arniyhjs-gpt3.herokuapp.com/",
     visit: "https://arniyhjs-gpt3.herokuapp.com/s",
@@ -53,7 +53,7 @@ export const projects = [
     title: "SchoolSilo",
     description:
       "SchoolSilo is an education management platform. It is an All-In-One Education Managment Platform that enables school to spend less and operate effectively through digital transformation across workflows and processes.",
-    image: "/images/school-silo.png",
+    image: "/images/school-silo.jpg",
     tags: ["HTML", "TailwindCSS", "JavaScript"],
     source: "https://www.schoolsilo.cloud",
     visit: "https://www.schoolsilo.cloud",
@@ -83,27 +83,27 @@ export const certifications = [
     description: "",
     certifier: "Srimba",
     issued: "July 27, 2020",
-    image: "/images/ui-design.png",
+    image: "/images/ui-design.jpg",
   },
   {
     title: "The Responsive Web Design Bootcamp",
     description: "",
     certifier: "Srimba",
     issued: "July 17, 2020",
-    image: "/images/rwd.png",
+    image: "/images/rwd.jpg",
   },
   {
     title: "The JavaScript Bootcamp",
     description: "",
     certifier: "Srimba",
     issued: "September 18, 2020",
-    image: "/images/javascript.png",
+    image: "/images/javascript.jpg",
   },
   {
     title: "The React Bootcamp",
     description: "",
     certifier: "Srimba",
     issued: "May 15, 2021",
-    image: "/images/react.png",
+    image: "/images/react.jpg",
   },
 ];
