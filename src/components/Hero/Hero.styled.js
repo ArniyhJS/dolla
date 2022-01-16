@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Section, SectionTitle } from "styles/GlobalComponents";
+import Button from "styles/GlobalComponents/Button";
+import { Section, SectionTitle, SectionText } from "styles/GlobalComponents";
 
 export const HeroSection = styled(Section)`
   /* height: calc(100% + 40vh); */
@@ -12,14 +13,23 @@ export const HeroSection = styled(Section)`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 100%;
+    height: 85vh;
     margin-top: initial;
   }
 `;
 
 export const HeroSectionTitle = styled(SectionTitle)`
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 36 px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    line-height: 35px;
+  }
+`;
+
+export const HeroSectionText = styled(SectionText)`
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-bottom: 30px;
   }
 `;
 
@@ -39,6 +49,12 @@ export const LeftSection = styled.div`
     flex-direction: column;
     margin: 0 auto;
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
 `;
 
 export const ProfileName = styled("span")`
@@ -54,4 +70,13 @@ export const ProfileName = styled("span")`
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-radius: 50px;
+`;
+
+export const HeroButton = styled(Button)`
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 25px 0px !important;
+
+    font-size: 15.5px;
+    font-weight: bold;
+  }
 `;

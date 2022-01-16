@@ -1,12 +1,13 @@
 import React from "react";
 
 import { SectionText, SectionTitle } from "styles/GlobalComponents";
-import Button from "styles/GlobalComponents/Button";
 import {
   LeftSection,
   HeroSection,
   ProfileName,
+  HeroSectionText,
   HeroSectionTitle,
+  HeroButton,
 } from "./Hero.styled";
 
 const Hero = (props) => (
@@ -17,13 +18,13 @@ const Hero = (props) => (
         <br />
         and I do everything Frontend
       </HeroSectionTitle>
-      <SectionText>
+      <HeroSectionText>
         If softwares could be craftly done with user experience as it primary
         focus then you are not just creating solutions but building relationship
-      </SectionText>
-      <Button onClick={() => (window.location = "#experience")}>
-        My Experience
-      </Button>
+      </HeroSectionText>
+      <HeroButton onClick={() => (window.location = "#experience")}>
+        My experience
+      </HeroButton>
     </LeftSection>
   </HeroSection>
 );
