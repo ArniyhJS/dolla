@@ -13,8 +13,21 @@ export const HeroSection = styled(Section)`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
     height: 85vh;
     margin-top: initial;
+  }
+`;
+
+export const HeroIcon = styled.span`
+  display: none;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
+    /* align-self: center; */
+    margin-top: 40px;
+    margin-bottom: -50px;
   }
 `;
 
@@ -22,7 +35,7 @@ export const HeroSectionTitle = styled(SectionTitle)`
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 32px;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
     line-height: 35px;
   }
 `;
@@ -35,6 +48,7 @@ export const HeroSectionText = styled(SectionText)`
 
 export const LeftSection = styled.div`
   width: 100%;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;

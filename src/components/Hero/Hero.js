@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosSnow } from "react-icons/io";
 
 import { SectionText, SectionTitle } from "styles/GlobalComponents";
 import {
@@ -8,10 +9,14 @@ import {
   HeroSectionText,
   HeroSectionTitle,
   HeroButton,
+  HeroIcon,
 } from "./Hero.styled";
 
 const Hero = (props) => (
   <HeroSection row nopadding>
+    <HeroIcon>
+      <IoIosSnow size="5rem" />
+    </HeroIcon>
     <LeftSection>
       <HeroSectionTitle main center>
         Hey there, <br /> I'm <ProfileName>Aniebiet Ebebe</ProfileName>
