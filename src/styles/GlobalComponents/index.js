@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 15px")};
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
@@ -82,10 +82,10 @@ export const SectionText = styled.p`
 `;
 
 export const SectionDivider = styled.div`
-  width: 100px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 
-  border-radius: 10px;
   background: ${(props) =>
     props.colorAlt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
@@ -95,13 +95,13 @@ export const SectionDivider = styled.div`
 
   margin-bottom: ${(props) => (props.divider ? "0.5rem 0" : "")};
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
-    height: 4px;
+    width: 20px;
+    height: 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
-    height: 2px;
+    width: 28px;
+    height: 28px;
   }
 `;
 export const SectionSubText = styled.p`

@@ -21,16 +21,16 @@ import {
 
 function Projects() {
   return (
-    <Section nopadding id="projects">
+    <Section id="projects">
       <SectionDivider divider />
       <SectionTitle>Projects</SectionTitle>
       <GridContainer>
         {projects.map(
           ({ id, image, title, description, source, tags, visit }, index) => (
-            <BlogCard key={id}>
+            <BlogCard key={index}>
               <Img src={image} />
               <TitleContent>
-                <HeaderThree title>{title}</HeaderThree>
+                <HeaderThree title={true}>{title}</HeaderThree>
                 <Hr />
               </TitleContent>
               <CardInfo>{description}</CardInfo>

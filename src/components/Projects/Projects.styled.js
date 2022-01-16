@@ -14,23 +14,30 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 1fr;
   padding: 3rem;
   place-items: center;
-  column-gap: 2rem;
-  row-gap: 10rem;
+  /* gap: 10rem; */
+  row-gap: 8rem;
+  margin-bottom: 20px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     padding-bottom: 0;
+    margin-bottom: 10px;
   }
 `;
 export const BlogCard = styled.div`
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 8px 8px 0px #f8cbb0, -8px -8px 0px #f8cbb0;
   text-align: center;
-  width: 400px;
+  max-width: 400px;
+  width: 90%;
+  height: 100%;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
@@ -78,17 +85,45 @@ export const StackContainer = styled("div")`
   background: #f8cbb0;
   padding-top: 5px;
   margin-top: 15px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 export const CardInfo = styled.p`
   width: 100%;
+  height: 25%;
   padding: 0 50px;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
   text-align: left;
+  overflow: auto;
+
+  overflow-y: scroll;
+  scrollbar-color: #000 #fff;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: black;
+    height: 5px;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
+    height: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 
@@ -97,7 +132,12 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  align-items: center;
+  margin: 40px 0;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 35px 0;
+  }
 `;
 
 export const ExternalLinks = styled.a`
@@ -124,14 +164,24 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 2rem 1rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 1rem;
+  }
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+  font-weight: bold;
   background: black;
   padding: 3px 10px;
   border-radius: 15px;
 
   border: 10px rgba(236, 120, 41, 1) double;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 35px 0;
+    font-size: 1.1rem;
+  }
 `;

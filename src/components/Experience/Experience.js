@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { BsDot } from "react-icons/bs";
 
 import { TimeLineData } from "constants/constants";
 import {
@@ -9,6 +10,9 @@ import {
 } from "styles/GlobalComponents";
 
 import {
+  Icon,
+  SExperience,
+  ExperienceContainer,
   CarouselItem,
   CarouselButton,
   CarouselItemImg,
@@ -18,60 +22,85 @@ import {
   CarouselButtonDot,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from "./TimeLine.styled";
+} from "./Experience.styled";
+
+import { useTimeLine } from "./Experience.rook";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-const Timeline = () => {
-  const carouselRef = useRef();
-  const [activeItem, setActiveItem] = useState(0);
-
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: "smooth" });
-  };
-
-  const handleClick = (e, i) => {
-    e.preventDefault();
-
-    if (carouselRef.current) {
-      const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
-      );
-
-      scroll(carouselRef.current, scrollLeft);
-    }
-  };
-
-  const handleScroll = () => {
-    if (carouselRef.current) {
-      const index = Math.round(
-        (carouselRef.current.scrollLeft /
-          (carouselRef.current.scrollWidth * 0.7)) *
-          TimeLineData.length
-      );
-
-      setActiveItem(index);
-    }
-  };
-
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
-  useEffect(() => {
-    const handleResize = () => {
-      scroll(carouselRef.current, 0);
-    };
-
-    window.addEventListener("resize", handleResize);
-  }, []);
+const Experience = () => {
+  const { activeItem, carouselRef, handleClick, handleScroll } = useTimeLine();
 
   return (
-    <Section id="about">
+    <Section id="experience">
       <SectionDivider divider />
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle>Experience</SectionTitle>
       <SectionText>
-        How did you start learning and what are your biggest JavaScript
-        milestone
+        Passion for learning has always been the deep seated reason for going
+        into programming and I have develop experience in frontend and it
+        dynamics which includes;
       </SectionText>
+
+      <ExperienceContainer>
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Optimizing the user experience.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Using HTML, CSS, JavaScript and Frameworks to bring UI/UX concepts to
+          actualization.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Developing and maintaining the user interface.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Implementing design on mobile websites.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Creating tools that improve site interaction regardless of the
+          browser.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Managing software workflow.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Following SEO best practices.
+        </SExperience>
+
+        <SExperience>
+          <Icon>
+            <BsDot size="5rem" />
+          </Icon>
+          Fixing bugs and testing for usability.
+        </SExperience>
+      </ExperienceContainer>
+
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -126,6 +155,7 @@ const Timeline = () => {
           ))}
         </>
       </CarouselContainer>
+
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton
@@ -142,4 +172,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Experience;

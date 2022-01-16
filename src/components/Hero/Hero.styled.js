@@ -1,9 +1,26 @@
 import styled from "styled-components";
-import { Section } from "styles/GlobalComponents";
+import { Section, SectionTitle } from "styles/GlobalComponents";
 
 export const HeroSection = styled(Section)`
   /* height: calc(100% + 40vh); */
   height: 85vh;
+  margin-top: 85px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 100%;
+    margin-top: initial;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 100%;
+    margin-top: initial;
+  }
+`;
+
+export const HeroSectionTitle = styled(SectionTitle)`
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 36 px;
+  }
 `;
 
 export const LeftSection = styled.div`
@@ -15,6 +32,7 @@ export const LeftSection = styled.div`
 
     margin: 0 auto;
   }
+
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
     display: flex;

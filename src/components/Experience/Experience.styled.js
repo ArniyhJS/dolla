@@ -1,8 +1,38 @@
 import styled from "styled-components";
 
+export const ExperienceContainer = styled.div`
+  margin-bottom: 50px;
+`;
+
+export const SExperience = styled.p`
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #838480;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+export const Icon = styled.span`
+  padding-top: 5px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 0;
+  }
+`;
+
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: #0f1624;
   padding: 0rem;
   list-style: none;
   display: flex;
@@ -40,8 +70,9 @@ export const CarouselMobileScrollNode = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  background: #0f1624;
+  /* background: #0f1624; */
   border-radius: 3px;
+  padding: 10px;
   max-width: 196px;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -50,15 +81,16 @@ export const CarouselItem = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 32px;
-    min-width: 120px;
+    min-width: 200px;
     background: #0e131f;
-    padding: 4px;
+    padding: 30px 10px;
     align-content: start;
     scroll-snap-align: start;
-    border-radius: 3px;
+    border-radius: 15px;
     overflow: visible;
     position: relative;
-    height: fit-content;
+    height: 130px;
+    margin-bottom: 10px;
 
     ${(props) =>
       props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
@@ -67,7 +99,7 @@ export const CarouselItem = styled.div`
 
 export const CarouselItemTitle = styled.h4`
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 32px;
   letter-spacing: 0.02em;
   display: flex;

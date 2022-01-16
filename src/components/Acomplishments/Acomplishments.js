@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionTitle } from "styles/GlobalComponents";
 import { Box, Boxes, BoxNum, BoxText } from "./Acomplishments.styled";
 
 const Acomplishments = () => (
-  <Section>
+  <Section id="accomplishments">
     <SectionDivider divider />
     <SectionTitle>Personal Accomplishment</SectionTitle>
     <Boxes>

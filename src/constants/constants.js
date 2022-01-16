@@ -1,28 +1,7 @@
 export const projects = [
   {
-    title: "Dolla",
-    description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/dolla.png",
-    tags: ["React", "CSS-in-JS", "JavaScript"],
-    source: "http://arniyhjs-dolla.herokuapp.com/",
-    visit: "http://arniyhjs-dolla.herokuapp.com/",
-    id: 0,
-  },
-  {
-    title: "GPT3: Open AI",
-    description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: "/images/gpt3.png",
-    tags: ["React", "JavaScript", "CSS"],
-    source: "https://arniyhjs-gpt3.herokuapp.com/",
-    visit: "https://arniyhjs-gpt3.herokuapp.com/s",
-    id: 1,
-  },
-  {
     title: "Viddey",
-    description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    description: `Viddey is a user-generated video campaigns web app powered the customers. It's a fun brand video sharing platform that enable people share and interact with others on the plaform`,
     image: "/images/viddey.png",
     tags: ["React", "Material-UI", "Redux"],
     source: "https://viddey.video",
@@ -32,7 +11,7 @@ export const projects = [
   {
     title: "OFFICESILO",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "OFFICESILO Provides The Simplicity Your Organization Needs. OFFICESILO transforms the entire value chain that drives your organization with focus: from people, to processes, to documents, to assets and to finance.",
     image: "/images/office-silo.png",
     tags: ["React", "Bootstrap", "React-Query"],
     source: "https://officesilo.cloud",
@@ -40,9 +19,19 @@ export const projects = [
     id: 3,
   },
   {
+    title: "Dolla",
+    description:
+      "Dolla is a landing page which depicts a non-existing virtual financial bank application. Dolla was created solely for practice purpose and has no functioning application ",
+    image: "/images/dolla.png",
+    tags: ["React", "CSS-in-JS", "JavaScript"],
+    source: "http://arniyhjs-dolla.herokuapp.com/",
+    visit: "http://arniyhjs-dolla.herokuapp.com/",
+    id: 0,
+  },
+  {
     title: "Stable Shield",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "Company website for Stable Shield Solution Limited. Stable Shield is a company that builds bespoke solutions for their customers and clients",
     image: "/images/sss.png",
     tags: ["HTML", "CSS", "JQuery"],
     source: "https://www.stableshield.com",
@@ -50,28 +39,71 @@ export const projects = [
     id: 3,
   },
   {
+    title: "GPT3: Open AI",
+    description:
+      "Generative Pre-trained Transformer 3 is an autoregressive language model that uses deep learning to produce human-like text. GPT3 was created solely for practice purpose and has no functioning application",
+
+    image: "/images/gpt3.png",
+    tags: ["React", "JavaScript", "CSS"],
+    source: "https://arniyhjs-gpt3.herokuapp.com/",
+    visit: "https://arniyhjs-gpt3.herokuapp.com/s",
+    id: 1,
+  },
+  {
     title: "SchoolSilo",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "SchoolSilo is an education management platform. It is an All-In-One Education Managment Platform that enables school to spend less and operate effectively through digital transformation across workflows and processes.",
     image: "/images/school-silo.png",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    tags: ["HTML", "TailwindCSS", "JavaScript"],
+    source: "https://www.schoolsilo.cloud",
+    visit: "https://www.schoolsilo.cloud",
     id: 3,
   },
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2019, text: "Started internship program" },
+  { year: 2020, text: "Worked as a frontend developer" },
+  { year: 2021, text: "Promoted to head of frontend team" },
+  { year: 2022, text: "working as a freelancer" },
+  ,
 ];
 
 export const accomplishmentData = [
-  { number: 20, text: "Open Source Projects" },
-  { number: 1000, text: "Students" },
-  { number: 1900, text: "Github Followers" },
-  { number: 5000, text: "Github Stars" },
+  { number: "3+", text: "Years Coding Experience" },
+  { number: "10+", text: "Mentee" },
+  { number: 2, text: "Functional Web Applications" },
+  { number: 5, text: "Landing Pages" },
+  { number: 4, text: "Scrimba Certifications" },
+];
+
+export const certifications = [
+  {
+    title: "The UI Design Bootcamp",
+    description: "",
+    certifier: "Srimba",
+    issued: "July 27, 2020",
+    image: "/images/ui-design.png",
+  },
+  {
+    title: "The Responsive Web Design Bootcamp",
+    description: "",
+    certifier: "Srimba",
+    issued: "July 17, 2020",
+    image: "/images/rwd.png",
+  },
+  {
+    title: "The JavaScript Bootcamp",
+    description: "",
+    certifier: "Srimba",
+    issued: "September 18, 2020",
+    image: "/images/javascript.png",
+  },
+  {
+    title: "The React Bootcamp",
+    description: "",
+    certifier: "Srimba",
+    issued: "May 15, 2021",
+    image: "/images/react.png",
+  },
 ];

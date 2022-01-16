@@ -1,9 +1,9 @@
-import Hero from "components/Hero";
-import { Layout } from "layout/Layout";
-import Projects from "components/Projects";
-import Timeline from "components/TimeLine";
-import Technologies from "components/Technologies";
-import Acomplishments from "components/Acomplishments";
+import Hero from "@/components/Hero";
+import { Layout } from "@/layout/Layout";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Technologies from "@/components/Technologies";
+import Acomplishments from "@/components/Acomplishments";
 import Certifications from "@/components/Certifications";
 import BgAnimation from "@/components/BackgroundAnimation";
 
@@ -18,7 +18,7 @@ const Home = () => {
       </Section>
       <Projects />
       <Technologies />
-      <Timeline />
+      <Experience />
       <Acomplishments />
       <Certifications />
     </Layout>

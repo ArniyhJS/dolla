@@ -5,6 +5,9 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai";
 
+import { HiOutlineMail } from "react-icons/hi";
+import { IoIosPhonePortrait } from "react-icons/io";
+
 import { SocialIcons } from "../Header/Header.styled";
 import {
   Slogan,
@@ -16,7 +19,7 @@ import {
   SocialContainer,
   CompanyContainer,
   SocialIconsContainer,
-} from "./FooterStyles";
+} from "./Footer.styled";
 
 const Footer = () => {
   return (
@@ -24,20 +27,23 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel: +2348185989862">+2348185989862</LinkItem>
-        </LinkColumn>
-
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto: aniebietebebe1@gmail.com">
+          <LinkItem href="tel:+2348185989862">
+            <IoIosPhonePortrait size="3rem" />
             +2348185989862
           </LinkItem>
         </LinkColumn>
 
+        <LinkColumn>
+          <LinkTitle>Email</LinkTitle>
+          <LinkItem href="mailto:aniebietebebe1@gmail.com">
+            <HiOutlineMail size="3rem" /> &nbsp; aniebietebebe1@gmail.com
+          </LinkItem>
+        </LinkColumn>
+
         <SocialIconsContainer>
-          <CompanyContainer>
+          {/* <CompanyContainer>
             <Slogan>Make a difference</Slogan>
-          </CompanyContainer>
+          </CompanyContainer> */}
 
           <SocialContainer>
             <SocialIcons href="https://github.com/arniyhjs">

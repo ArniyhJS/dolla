@@ -2,22 +2,27 @@ import React from "react";
 
 import { SectionText, SectionTitle } from "styles/GlobalComponents";
 import Button from "styles/GlobalComponents/Button";
-import { LeftSection, HeroSection, ProfileName } from "./Hero.styled";
+import {
+  LeftSection,
+  HeroSection,
+  ProfileName,
+  HeroSectionTitle,
+} from "./Hero.styled";
 
 const Hero = (props) => (
   <HeroSection row nopadding>
     <LeftSection>
-      <SectionTitle main center>
+      <HeroSectionTitle main center>
         Hey there, <br /> I'm <ProfileName>Aniebiet Ebebe</ProfileName>
         <br />
         and I do everything Frontend
-      </SectionTitle>
+      </HeroSectionTitle>
       <SectionText>
-        value proposition: what you are proposing to your employer and it should
-        stand out
+        If softwares could be craftly done with user experience as it primary
+        focus then you are not just creating solutions but building relationship
       </SectionText>
-      <Button onClick={() => (window.location = "https://google.com")}>
-        About me
+      <Button onClick={() => (window.location = "#experience")}>
+        My Experience
       </Button>
     </LeftSection>
   </HeroSection>
