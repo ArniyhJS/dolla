@@ -8,14 +8,15 @@ export const projects = [
     visit: "https://viddey.video",
     id: 2,
   },
+
   {
-    title: "OFFICESILO",
+    title: "Salistech",
     description:
-      "OFFICESILO Provides The Simplicity Your Organization Needs. OFFICESILO transforms the entire value chain that drives your organization with focus: from people, to processes, to documents, to assets and to finance.",
-    image: "/images/office-silo.jpg",
-    tags: ["React", "Bootstrap", "React-Query"],
-    source: "https://officesilo.cloud",
-    visit: "https://officesilo.cloud",
+      "Company website for Salistech. Salistech provides digital tools, services, and solutions you need in your business. Our team of highly trained professionals ensure every project is completed to a high degree of excellence that guarantees maximum Return On Investment",
+    image: "/images/salistech.jpg",
+    tags: ["React", "Styled-Components", "Axios"],
+    source: "https://salistech.com",
+    visit: "https://salistech.com",
     id: 3,
   },
   {
