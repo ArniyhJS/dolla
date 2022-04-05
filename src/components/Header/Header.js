@@ -123,7 +123,7 @@ const Header = () => {
           <AiFillGithub size="3rem" />
         </SocialIcons>
 
-        <SocialIcons href="https://linkedin.com/arniyhjs">
+        <SocialIcons href="https://www.linkedin.com/in/arniyh/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
 
