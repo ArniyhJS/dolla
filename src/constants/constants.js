@@ -10,6 +10,17 @@ export const projects = [
   },
 
   {
+    title: "MyTrust.Page",
+    description:
+      "MyTrust.Page is a simple review aggregation platform to gain customers trust and business. It provides a platform where customers get analytic statistics about businesses thereby unifying businesses and customers relationship",
+    image: "/images/mytrust-page.jpg",
+    tags: ["HTML", "TailwindCSS", "AlpineJS"],
+    source: "https://www.mytrust.page",
+    visit: "https://www.mytrust.page",
+    id: 3,
+  },
+
+  {
     title: "Salistech",
     description:
       "Company website for Salistech. Salistech provides digital tools, services, and solutions you need in your business. Our team of highly trained professionals ensure every project is completed to a high degree of excellence that guarantees maximum Return On Investment",
@@ -50,16 +61,6 @@ export const projects = [
     visit: "https://arniyhjs-gpt3.herokuapp.com/s",
     id: 1,
   },
-  {
-    title: "SchoolSilo",
-    description:
-      "SchoolSilo is an education management platform. It is an All-In-One Education Managment Platform that enables school to spend less and operate effectively through digital transformation across workflows and processes.",
-    image: "/images/school-silo.jpg",
-    tags: ["HTML", "TailwindCSS", "JavaScript"],
-    source: "https://www.schoolsilo.cloud",
-    visit: "https://www.schoolsilo.cloud",
-    id: 3,
-  },
 ];
 
 export const TimeLineData = [
@@ -74,7 +75,7 @@ export const accomplishmentData = [
   { number: "3+", text: "Years Coding Experience" },
   { number: "10+", text: "Mentee" },
   { number: 2, text: "Functional Web Applications" },
-  { number: 5, text: "Landing Pages" },
+  { number: 6, text: "Landing Pages" },
   { number: 4, text: "Scrimba Certifications" },
 ];
 
